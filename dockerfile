@@ -8,5 +8,9 @@ RUN \
   apt-get update && \
   apt-get install -y ruby-full
 
+RUN  \
+  apt-get update && \
+  apt-get install -y vim
+
 RUN gem install rest-client && gem install builder && gem install activesupport && gem install faker && gem install rspec
 
