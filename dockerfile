@@ -14,3 +14,5 @@ RUN  \
 
 RUN gem install rest-client && gem install builder && gem install activesupport && gem install faker && gem install rspec
 
+COPY openssl.cnf /etc/ssl
+CMD sleep 5000;
